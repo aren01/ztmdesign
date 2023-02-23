@@ -170,7 +170,7 @@
                 <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
                 <h1 class="text-3xl text-center font-poppins pb-2 font-bold">RSVP</h1>
                 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSezqoesIoYIbtPnw-veXPf5ugujxS_U9CZvlqZyLtmBdZvOSg/viewform?embedded=true" width="385" height="850" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-                <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
+                <hr class="w-48 h-1 mx-auto my-3 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
             </div>
             <div class="bg-gray-100 w-96 text-center shadow-lg">
                 <h1 class="text-3xl text-center font-poppins pb-3 font-bold">Contact Us</h1>
