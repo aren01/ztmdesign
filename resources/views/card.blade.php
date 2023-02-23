@@ -183,7 +183,7 @@
                         <i class="fa-brands fa-instagram fa-2xl"></i>
                     </a>
                     <a href="https://shopee.com.my/zt306">
-                        <img src="{{ asset('img/shopeeblacktransparent.png') }}" class="img-center py-2" alt="" width="32" height="32">
+                        <img src="{{ asset('img/shopeeblacktransparent.png') }}" class="img-center py-2" alt="shopee" width="32" height="32">
                     </a>
                 </div>
 
