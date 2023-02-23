@@ -13,7 +13,8 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@100;400&display=swap" rel="stylesheet">
 
-    <script src="https://kit.fontawesome.com/a1ac3643e7.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/638b68b310.js" crossorigin="anonymous"></script>
+
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
