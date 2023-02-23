@@ -9,7 +9,6 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
 </head>
 
 <!--start of the body-->
@@ -139,7 +138,7 @@
             </div>
             <div class="bg-gray-100 w-96 text-center shadow-lg">
                 <div class="p-6">
-                    <img src="{{ asset('img/bismillah.png') }}" class="img-center" alt="">
+                    <img src="{{ asset('img/bismillah.png') }}" class="img-center" alt="" width="100" height="100">
                 </div>
                 <p class="text-xs font-poppins tracking-wide">
                     "Ya Allah Yang Maha Mencipta,
@@ -166,10 +165,29 @@
                     Aamin, Ya Rabbal A'lamin.
                 </p>
             </div>
+
             <div class="bg-gray-100 w-96 text-center shadow-lg">
                 <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
                 <h1 class="text-3xl text-center font-poppins pb-3 font-bold">RSVP</h1>
                 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSezqoesIoYIbtPnw-veXPf5ugujxS_U9CZvlqZyLtmBdZvOSg/viewform?embedded=true" width="385" height="850" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
+            </div>
+            <div class="bg-gray-100 w-96 text-center shadow-lg">
+                <h1 class="text-3xl text-center font-poppins pb-3 font-bold">Contact Us</h1>
+                <img src="{{ asset('img/logo.jpg') }}" class="img-center p-3" alt="" width="200" height="200">
+                <div class="p-6">
+                    <a href="http://www.wasap.my/60127814142/">
+                        <i class="fa-brands fa-whatsapp fa-2xl"></i>
+                    </a>
+                    <a href="https://www.instagram.com/ztmdesign/">
+                        <i class="fa-brands fa-instagram fa-2xl"></i>
+                    </a>
+                    <a href="https://shopee.com.my/zt306">
+                        <img src="{{ asset('img/shopeeblacktransparent.png') }}" class="img-center py-2" alt="" width="32" height="32">
+                    </a>
+                </div>
+
+
             </div>
         </div>
 
@@ -179,5 +197,6 @@
     var audio = document.getElementById("myaudio");
     audio.volume = 0.3;
 </script>
+
 
 </html>
