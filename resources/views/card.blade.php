@@ -30,7 +30,7 @@
             <!--shadow at background-->
             <div class="shadow-lg">
                 <!--image for the starting/top-->
-                <img src="{{ asset('img/test.jpg') }}" class="max-w-sm h-auto" alt="">
+                <img src="{{ asset('img/card.jpg') }}" class="max-w-sm h-auto" alt="">
             </div>
 
             <!--2nd box-->
