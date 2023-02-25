@@ -11,6 +11,9 @@ module.exports = {
         "./resources/**/*.blade.php",
         "./resources/**/*.js",
         "./resources/**/*.vue",
+        "./src/**/*.{html,js}",
+        "./node_modules/tw-elements/dist/js/**/*.js",
+        "./node_modules/flowbite/**/*.js",
     ],
     theme: {
         extend: {
@@ -19,6 +22,10 @@ module.exports = {
                 poppins: ['"Poppins"', "sans-serif"],
             },
         },
-        plugins: [require("daisyui")],
+        plugins: [
+            require("daisyui"),
+            require("tw-elements/dist/plugin"),
+            require("flowbite/plugin"),
+        ],
     },
 };
