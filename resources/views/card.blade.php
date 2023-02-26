@@ -183,7 +183,7 @@
                         <i class="fa-brands fa-instagram fa-2xl"></i>
                     </a>
                     <a href="https://shopee.com.my/zt306">
-                        <img src="{{ asset('img/shopeeblacktransparent.png') }}" class="img-center" alt="shopee" width="32" height="32">
+                        <img src="{{ asset('img/shopeeblacktransparent.png') }}" class="img-center pb-24" alt="shopee" width="32" height="32">
                     </a>
                     <hr class="w-48 h-1 mx-auto my-2 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
                 </div>
@@ -284,13 +284,12 @@
             </div>
 
         </div>
-
         <script>
-            // All page modals
-            var modals = document.querySelectorAll('.modal');
-
             // Get the button that opens the modal
             var btn = document.querySelectorAll("button.modal-button");
+
+            // All page modals
+            var modals = document.querySelectorAll('.modal');
 
             // Get the <span> element that closes the modal
             var spans = document.getElementsByClassName("close");
@@ -323,12 +322,13 @@
             }
         </script>
 
+        <script>
+            var audio = document.getElementById("myaudio");
+            audio.volume = 0.3;
+        </script>
+
 </body>
 
-<script>
-    var audio = document.getElementById("myaudio");
-    audio.volume = 0.3;
-</script>
 
 
 </html>
