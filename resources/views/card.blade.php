@@ -29,7 +29,7 @@
             <!--shadow at background-->
             <div class="shadow-lg">
                 <!--image for the starting/top-->
-                <img src="{{ asset('img/card.jpg') }}" class="max-w-sm h-auto" alt="">
+                <img src="{{ asset('img/card.jpg') }}" class="max-w-sm h-auto rounded-t-md" alt="">
             </div>
 
             <!--2nd box-->
@@ -172,10 +172,10 @@
                 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSezqoesIoYIbtPnw-veXPf5ugujxS_U9CZvlqZyLtmBdZvOSg/viewform?embedded=true" width="385" height="820" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
                 <hr class="w-48 h-1 mx-auto my-2 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
             </div>
-            <div class="bg-gray-100 w-96 h-96 text-center shadow-lg">
+            <div class="bg-gray-100 w-96 h-96 text-center shadow-lg rounded-b-md">
                 <h1 class="text-3xl text-center font-poppins pb-3 font-bold">Contact Us</h1>
                 <img src="{{ asset('img/logo.jpg') }}" class="img-center p-3" alt="" width="200" height="200">
-                <div class="p-6">
+                <div class="p-6 pb-32">
                     <a href="http://www.wasap.my/60127814142/">
                         <i class="fa-brands fa-whatsapp fa-2xl"></i>
                     </a>
@@ -183,7 +183,7 @@
                         <i class="fa-brands fa-instagram fa-2xl"></i>
                     </a>
                     <a href="https://shopee.com.my/zt306">
-                        <img src="{{ asset('img/shopeeblacktransparent.png') }}" class="img-center pb-24" alt="shopee" width="32" height="32">
+                        <img src="{{ asset('img/shopeeblacktransparent.png') }}" class="img-center" alt="shopee" width="32" height="32">
                     </a>
                     <hr class="w-48 h-1 mx-auto my-2 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
                 </div>
@@ -198,26 +198,26 @@
                             <span class="material-symbols-outlined">
                                 calendar_month
                             </span>
-                            <span class="tab tab-home block text-xs">Calendar</span>
+                            <span class="tab tab-home block text-xs font-poppins">Calendar</span>
                         </button>
 
                         <button href="#myModal2" class="modal-button w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1">
                             <span class="material-symbols-outlined">
                                 near_me
                             </span>
-                            <span class="tab tab-kategori block text-xs">Direction</span>
+                            <span class="tab tab-kategori block text-xs font-poppins">Direction</span>
                         </button>
                         <button href="#myModal3" class="modal-button w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1">
                             <span class="material-symbols-outlined">
                                 explore
                             </span>
-                            <span class="tab tab-explore block text-xs">Contact</span>
+                            <span class="tab tab-explore block text-xs font-poppins">Contact</span>
                         </button>
                         <button href="#myModal4" class="modal-button w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1">
                             <span class="material-symbols-outlined">
                                 nest_clock_farsight_analog
                             </span>
-                            <span class="tab tab-whishlist block text-xs">Programme</span>
+                            <span class="tab tab-whishlist block text-xs font-poppins">Programme</span>
                         </button>
                     </div>
                 </section>
@@ -229,13 +229,12 @@
         <div id="myModal1" class="modal">
 
             <!-- Modal content -->
-            <div class="modal-content">
+            <div class="modal-content rounded-md">
                 <span class="close topright">&times;</span>
-                <p>Some text in the Modal..</p>
-                <p>Some text in the Modal..</p>
-                <p>Some text in the Modal..</p>
-                <p>Some text in the Modal..</p>
-                <p>Some text in the Modal..</p>
+                <img src="{{ asset('img/calendar.png') }}" class="img-center p-3" alt="">
+                <p class="pb-4 font-poppins">Set event reminder : </p>
+                <a target=" _blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=MG5lZ2I4ZW9sb3BvZHU5NDVqZnVubG1nNHEgaGFmaXptdXRhbGliMDFAbQ&amp;tmsrc=hafizmutalib01%40gmail.com"><img class="img-center pb-4" src="https://www.google.com/calendar/images/ext/gc_button1_en.gif"></a>
+
             </div>
 
         </div>
@@ -244,88 +243,141 @@
         <div id="myModal2" class="modal">
 
             <!-- Modal content -->
-            <div class="modal-content">
+            <div class="modal-content rounded-md">
                 <span class="close topright">&times;</span>
-                <p>Some text in the Modal..</p>
-                <p>Some text in the Modal..</p>
-                <p>Some text in the Modal..</p>
-                <p>Some text in the Modal..</p>
-                <p>Some text in the Modal..</p>
+                <img width="64" height="64" src="{{ asset('img/maps.png') }}" class="img-center p-3" alt="">
+                <p class="pb-4 font-poppins">Google Maps : </p>
+                <div class="pb-4">
+                    <a href="https://goo.gl/maps/FSLw249n2hCMMDZm9">
+                        <button class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">
+                            Click here
+                        </button>
+                    </a>
+                </div>
+                <img width="70" height="70" src="{{ asset('img/waze.png') }}" class="img-center p-3 rounded-full" alt="">
+                <p class="pb-4">Waze : </p>
+                <div class="pb-4">
+                    <a href="https://ul.waze.com/ul?place=ChIJJY7Mqih62jER2Y3nqwN7_pc&ll=1.65713860%2C103.64212830&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location">
+                        <button class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">
+                            Click here
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 3rd Modal -->
+    <div id="myModal3" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content rounded-md">
+            <span class="close topright">&times;</span>
+
+            <div class="flex space-x-4 box">
+                <div class="py-6">
+                    <p class="pb-2 font-poppins">Ali (Ayah)</p>
+                    <a href="https://www.google.com/">
+                        <button class="flex space-x-2 items-center px-4 py-2 bg-green-500 hover:bg-green-700 rounded-md drop-shadow-md">
+                            <!-- use SVG, PNG, or an Icon here -->
+                            <img src="{{ asset('img/whatsapp.png') }}" class="" alt="" width="30" height="30">
+                            <span class="font-poppins">
+                                WhatsApp
+                            </span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="flex space-x-4 box">
+                <div class="py-6">
+                    <p class="pb-2 font-poppins">Ali (Ayah)</p>
+                    <a href="https://www.google.com/">
+                        <button class="flex space-x-2 items-center px-4 py-2 bg-green-500 hover:bg-green-700 rounded-md drop-shadow-md">
+                            <!-- use SVG, PNG, or an Icon here -->
+                            <img src="{{ asset('img/whatsapp.png') }}" class="" alt="" width="30" height="30">
+                            <span class="font-poppins">
+                                WhatsApp
+                            </span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="flex space-x-4 box">
+                <div class="py-6">
+                    <p class="pb-2 font-poppins">Ali (Ayah)</p>
+                    <a href="https://www.google.com/">
+                        <button class="flex space-x-2 items-center px-4 py-2 bg-green-500 hover:bg-green-700 rounded-md drop-shadow-md">
+                            <!-- use SVG, PNG, or an Icon here -->
+                            <img src="{{ asset('img/whatsapp.png') }}" class="" alt="" width="30" height="30">
+                            <span class="font-poppins">
+                                WhatsApp
+                            </span>
+                        </button>
+                    </a>
+                </div>
             </div>
 
         </div>
 
-        <!-- 3rd Modal -->
-        <div id="myModal3" class="modal">
+    </div>
 
-            <!-- Modal content -->
-            <div class="modal-content">
-                <span class="close topright">&times;</span>
-                <p>Some text in the Modal..</p>
-                <p>Some text in the Modal..</p>
-                <p>Some text in the Modal..</p>
-                <p>Some text in the Modal..</p>
-                <p>Some text in the Modal..</p>
-            </div>
+    <!-- 4th Modal -->
+    <div id="myModal4" class="modal">
 
-        </div>
-
-        <!-- 4th Modal -->
-        <div id="myModal4" class="modal">
-
-            <!-- Modal content -->
-            <div class="modal-content">
-                <span class="close topright">&times;</span>
-                <p>Some text in the Modal..</p>
-                <p>Some text in the Modal..</p>
-                <p>Some text in the Modal..</p>
-                <p>Some text in the Modal..</p>
-                <p>Some text in the Modal..</p>
-            </div>
+        <!-- Modal content -->
+        <div class="modal-content rounded-md p-6">
+            <span class="close topright">&times;</span>
+            <h1 class="font-bold p-4 font-poppins">TENTATIVE</h1>
+            <p class="font-poppins">Event starts&emsp;:&emsp;12:00 P.M</p>
+            <p class="font-poppins">Arrival of bride&emsp;:&emsp;1:00 P.M</p>
+            <p class="pb-4 font-poppins">Event ends&emsp;:&emsp;4:00 P.M</p>
 
         </div>
-        <script>
-            // Get the button that opens the modal
-            var btn = document.querySelectorAll("button.modal-button");
 
-            // All page modals
-            var modals = document.querySelectorAll('.modal');
+    </div>
+    <script>
+        // Get the button that opens the modal
+        var btn = document.querySelectorAll("button.modal-button");
 
-            // Get the <span> element that closes the modal
-            var spans = document.getElementsByClassName("close");
+        // All page modals
+        var modals = document.querySelectorAll('.modal');
 
-            // When the user clicks the button, open the modal 
-            for (var i = 0; i < btn.length; i++) {
-                btn[i].onclick = function(e) {
-                    e.preventDefault();
-                    modal = document.querySelector(e.target.getAttribute("href"));
-                    modal.style.display = "block";
+        // Get the <span> element that closes the modal
+        var spans = document.getElementsByClassName("close");
+
+        // When the user clicks the button, open the modal 
+        for (var i = 0; i < btn.length; i++) {
+            btn[i].onclick = function(e) {
+                e.preventDefault();
+                modal = document.querySelector(e.target.getAttribute("href"));
+                modal.style.display = "block";
+            }
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        for (var i = 0; i < spans.length; i++) {
+            spans[i].onclick = function() {
+                for (var index in modals) {
+                    if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";
                 }
             }
+        }
 
-            // When the user clicks on <span> (x), close the modal
-            for (var i = 0; i < spans.length; i++) {
-                spans[i].onclick = function() {
-                    for (var index in modals) {
-                        if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";
-                    }
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                for (var index in modals) {
+                    if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";
                 }
             }
+        }
+    </script>
 
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function(event) {
-                if (event.target.classList.contains('modal')) {
-                    for (var index in modals) {
-                        if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";
-                    }
-                }
-            }
-        </script>
-
-        <script>
-            var audio = document.getElementById("myaudio");
-            audio.volume = 0.3;
-        </script>
+    <script>
+        var audio = document.getElementById("myaudio");
+        audio.volume = 0.3;
+    </script>
 
 </body>
 
