@@ -172,7 +172,7 @@
                 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSezqoesIoYIbtPnw-veXPf5ugujxS_U9CZvlqZyLtmBdZvOSg/viewform?embedded=true" width="385" height="820" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
                 <hr class="w-48 h-1 mx-auto my-2 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
             </div>
-            <div class="bg-gray-100 w-96 h-96 text-center shadow-lg rounded-b-md">
+            <div class="bg-gray-100 w-96 h-96 text-center shadow-lg rounded-b-md pb-96">
                 <h1 class="text-3xl text-center font-poppins pb-3 font-bold">Contact Us</h1>
                 <img src="{{ asset('img/logo.jpg') }}" class="img-center p-3" alt="" width="200" height="200">
                 <div class="p-6 pb-32">
