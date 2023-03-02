@@ -324,9 +324,7 @@
                                 <p class="font-poppins">Event starts&emsp;:&emsp;12:00 P.M</p>
                                 <p class="font-poppins">Arrival of bride&emsp;:&emsp;1:00 P.M</p>
                                 <p class="pb-4 font-poppins">Event ends&emsp;:&emsp;4:00 P.M</p>
-
                             </div>
-
                         </div>
 
                     </div>
