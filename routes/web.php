@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/card', function () {
     return view('card');
 });
+
+Route::get('/', function () {
+    return view('home');
+});

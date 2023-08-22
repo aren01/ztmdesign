@@ -9,19 +9,19 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
 
 <!--start of the body-->
 <!--background colour-->
 
 <body class="bg-gray-300">
-    <div class="audio-container">
-        <audio class="audio-container" controls autoplay src="mp3/edsheeran-perfect.mp3" id="myaudio">
-            <div style="border: 1px solid black ; padding: 8px ;">
-                Sorry, your browser does not support the audio element.
-            </div>
-        </audio>
-    </div>
+
+    <audio controls>
+        <source src="{{ asset('mp3/edsheeran-perfect.mp3') }}" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
     <div class="">
 
         <!--put everything in a flex container and center it-->
@@ -41,9 +41,9 @@
                 <img src="{{ asset('img/assalam.png') }}" class="max-w-sm h-auto object-contain scale-75 py-6" alt="">
 
                 <!--typography and their classes-->
-                <h1 class="text-2xl text-center font-poppins">Bapa</h1>
+                <h1 class="text-xl text-center font-poppins">Datuk Ahmad Daniel Bin Arief</h1>
                 <h1 class="text-2xl text-center font-poppins">&</h1>
-                <h1 class="text-2xl text-center font-poppins pb-6">Ibu</h1>
+                <h1 class="text-xl text-center font-poppins pb-6">Datin Hannah Fatimah Binti Ibrahim</h1>
 
 
                 <p class="text-base text-center tracking-normal font-poppins pb-6">
@@ -56,9 +56,9 @@
                     ke walimatul urus puteri kami
                 </p>
 
-                <h1 class="text-4xl text-center font-dancing-script pb-3">Alina</h1>
+                <h1 class="text-2xl text-center font-dancing-script pb-3">Noor Alina Binti Ahmad Daniel</h1>
                 <p class="text-base text-center font-poppins">dengan pasangannya</p>
-                <h1 class="text-4xl text-center font-dancing-script pt-3">Saeed</h1>
+                <h1 class="text-2xl text-center font-dancing-script pt-3">Syed Saeed Bin Syed Ameer</h1>
                 <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
             </div>
 
@@ -68,9 +68,9 @@
                         calendar_today
                     </span>
                     <p class="text-base font-poppins py-6">
-                        Pada (hari), (tarikh), bersamaan
+                        Pada Sabtu, 23 November 2023, bersamaan
                         <br>
-                        (tarikh dalam kalendar hijrah)
+                        11 Jamadilawal 1445
                     </p>
                 </div>
                 <div class="">
@@ -80,11 +80,11 @@
                     <p class="text-base font-poppins py-6">
                         Lokasi
                         <br>
-                        Bla Bla
+                        The St. Regis Kuala Lumpur
                         <br>
-                        Bla Bla
+                        6, Jalan Stesen Sentral 2
                         <br>
-                        bla bla
+                        Kuala Lumpur Sentral, 50470 Kuala Lumpur
                     </p>
                 </div>
 
@@ -96,7 +96,10 @@
                         Aturcara majlis
                     </p>
                     <p class="text-base font-poppins font-bold">
-                        (masa)
+                        10:00 AM - 4:00 PM
+                    </p>
+                    <p class="text-base font-poppins font-bold">
+                        Ketibaan Pengantin : 12:00 PM
                     </p>
                 </div>
                 <div class="">
@@ -104,10 +107,10 @@
                         warning
                     </span>
                     <p class="text-base font-poppins font-bold">
-                        MENGIKUT SOP YANG DITETAPKAN
+                        KOD PAKAIAN :
                     </p>
                     <p class="text-base font-poppins font-bold">
-                        RSVP SEBELUM (tarikh)
+                        Formal / Batik / Baju Kebangsaan
                     </p>
                 </div>
                 <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
@@ -173,9 +176,9 @@
                 <hr class="w-48 h-1 mx-auto my-2 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
             </div>
             <div class="bg-gray-100 w-96 h-96 text-center shadow-lg rounded-b-md ">
-                <h1 class="text-3xl text-center font-poppins pb-3 font-bold">Contact Us</h1>
+                <h1 class="text-2xl text-center font-poppins pb-3 font-bold">Exclusively created by</h1>
                 <img src="{{ asset('img/logo.jpg') }}" class="img-center p-3" alt="" width="200" height="200">
-                <div class="p-6 pb-72">
+                <div class="p-6 pb-64">
                     <a href="http://www.wasap.my/60127814142/">
                         <i class="fa-brands fa-whatsapp fa-2xl"></i>
                     </a>
@@ -186,6 +189,9 @@
                         <img src="{{ asset('img/shopeeblacktransparent.png') }}" class="img-center" alt="shopee" width="32" height="32">
                     </a>
                     <hr class="w-48 h-1 mx-auto my-2 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
+                    <hr class="w-48 h-1 mx-auto my-2 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
+
+
                 </div>
             </div>
             <div class="w-full h-screen">
@@ -445,6 +451,96 @@
             if (event.target == modal[3]) {
                 modal[3].style.display = "none";
             }
+        }
+    </script>
+    <script>
+        // player
+        var music = document.querySelector('.music-element')
+        var playBtn = document.querySelector('.play')
+        var seekbar = document.querySelector('.seekbar')
+        var currentTime = document.querySelector('.current-time')
+        var duration = document.querySelector('.duration')
+
+        function handlePlay() {
+            if (music.paused) {
+                music.play();
+                playBtn.className = 'pause'
+                playBtn.innerHTML = '<i class="material-icons">pause</i>'
+            } else {
+                music.pause();
+                playBtn.className = 'play'
+                playBtn.innerHTML = '<i class="material-icons">play_arrow</i>'
+            }
+            music.addEventListener('ended', function() {
+                playBtn.className = 'play'
+                playBtn.innerHTML = '<i class="material-icons">play_arrow</i>'
+                music.currentTime = 0
+            });
+        }
+
+        music.onloadeddata = function() {
+            seekbar.max = music.duration
+            var ds = parseInt(music.duration % 60)
+            var dm = parseInt((music.duration / 60) % 60)
+            duration.innerHTML = dm + ':' + ds
+        }
+        music.ontimeupdate = function() {
+            seekbar.value = music.currentTime
+        }
+        handleSeekBar = function() {
+            music.currentTime = seekbar.value
+        }
+        music.addEventListener('timeupdate', function() {
+            var cs = parseInt(music.currentTime % 60)
+            var cm = parseInt((music.currentTime / 60) % 60)
+            currentTime.innerHTML = cm + ':' + cs
+        }, false)
+
+
+        // like
+        var favIcon = document.querySelector('.favorite')
+
+        function handleFavorite() {
+            favIcon.classList.toggle('active');
+        }
+
+
+        // repeat
+        var repIcon = document.querySelector('.repeat')
+
+        function handleRepeat() {
+            if (music.loop == true) {
+                music.loop = false
+                repIcon.classList.toggle('active')
+            } else {
+                music.loop = true
+                repIcon.classList.toggle('active')
+            }
+        }
+
+        // volume
+        var volIcon = document.querySelector('.volume')
+        var volBox = document.querySelector('.volume-box')
+        var volumeRange = document.querySelector('.volume-range')
+        var volumeDown = document.querySelector('.volume-down')
+        var volumeUp = document.querySelector('.volume-up')
+
+        function handleVolume() {
+            volIcon.classList.toggle('active')
+            volBox.classList.toggle('active')
+        }
+
+        volumeDown.addEventListener('click', handleVolumeDown);
+        volumeUp.addEventListener('click', handleVolumeUp);
+
+        function handleVolumeDown() {
+            volumeRange.value = Number(volumeRange.value) - 20
+            music.volume = volumeRange.value / 100
+        }
+
+        function handleVolumeUp() {
+            volumeRange.value = Number(volumeRange.value) + 20
+            music.volume = volumeRange.value / 100
         }
     </script>
 </body>
