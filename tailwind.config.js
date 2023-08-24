@@ -19,11 +19,11 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                "dancing-script": ['"Dancing Script"', "cursive"],
                 poppins: ["Poppins", "sans-serif"],
-                champagne: ["CAC Champagne", "sans-serif"],
-                playfair: ["Playfair Display", "serif"],
-                edward: ["Edwardian Script ITC"],
+                champagne: ["champagne", "cursive"],
+                playfair: ["playfair", "serif"],
+                edward: ["edwardian", "cursive"],
+                inter: ["var(--font-inter)", "sans-serif"],
             },
             colors: {
                 gray: {
@@ -77,9 +77,6 @@ module.exports = {
                 "9/16": "56.25%",
                 "3/4": "75%",
                 "1/1": "100%",
-            },
-            fontFamily: {
-                inter: ["var(--font-inter)", "sans-serif"],
             },
             fontSize: {
                 xs: "0.75rem",
