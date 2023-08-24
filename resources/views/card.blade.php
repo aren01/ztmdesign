@@ -17,88 +17,112 @@
 
 <body class="bg-gray-300">
 
-    <audio controls>
-        <source src="{{ asset('mp3/edsheeran-perfect.mp3') }}" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
+
 
     <div class="">
-
         <!--put everything in a flex container and center it-->
-        <div class="flex flex-col mx-auto h-screen items-center">
-            <!--shadow at background-->
+        <div class="flex flex-col mx-auto h-screen items-center w-screen lg:w-96">
             <div class="shadow-lg">
                 <!--image for the starting/top-->
-                <img src="{{ asset('img/card.jpg') }}" class="max-w-sm h-auto rounded-t-md" alt="">
+                <img src="{{ asset('img/card2.jpg') }}" class="w-screen lg:w-96 h-full rounded-t-md" alt="">
             </div>
+            <div class="mx-auto">
+                <audio controls>
+                    <source src="{{ asset('mp3/edsheeran-perfect.mp3') }}" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <!--shadow at background-->
 
             <!--2nd box-->
             <!--white background-->
-            <div class=" bg-gray-100 shadow-lg">
-
+            <div class=" bg-gray-100 shadow-lg w-screen lg:w-96">
+                <img src="{{ asset('img/Bismillh.png') }}" class="py-2 mx-auto scale-75 w-[600px] h-[105px]" alt="">
                 <!--assalamualaikum image-->
+                <p class="text-base text-center tracking-normal font-poppins">Assalamualaikum W.B.T. & Salam Sejahtera
+                    <br>
+                    Dengan segala hormatnya, kami
+                <p class="italic text-center">With much gratitude and respect, we</p>
+                </p>
                 <!--images are put in public/img folder, replace the filename with file desired-->
-                <img src="{{ asset('img/assalam.png') }}" class="max-w-sm h-auto object-contain scale-75 py-6" alt="">
+
 
                 <!--typography and their classes-->
-                <h1 class="text-xl text-center font-poppins">Datuk Ahmad Daniel Bin Arief</h1>
-                <h1 class="text-2xl text-center font-poppins">&</h1>
-                <h1 class="text-xl text-center font-poppins pb-6">Datin Hannah Fatimah Binti Ibrahim</h1>
+                <h1 class="text-3xl text-center font-playfair pt-10">Datuk Ahmad Daniel
+                    <br>Bin Arief
+                </h1>
+                <h1 class="text-3xl text-center font-playfair p-6">&</h1>
+                <h1 class="text-3xl text-center font-playfair pb-10">Datin Hannah Fatimah
+                    <br>Binti Ibrahim
+                </h1>
 
 
-                <p class="text-base text-center tracking-normal font-poppins pb-6">
-                    Kami dengan rasa penuh kesyukuran
+                <p class="text-base text-center tracking-normal font-poppins">
+
+                <p class="text-base text-center tracking-normal font-poppins">
+                    menjemput
+                <p class="italic text-base text-center tracking-normal font-poppins">cordially invite</p>
+                <p class="text-base text-center tracking-normal font-poppins">Tan Sri/Puan Sri/Dato'Sri/Datin Sri
                     <br>
-                    & sukacita menjemput
+                    Dato/Datin/Tuan/Puan/Cik
                     <br>
-                    Tan Sri/Puan Sri/Dato'/Datin/Tuan/Puan
-                    <br>
-                    ke walimatul urus puteri kami
+                    ke majlis perkahwinan anakanda kami
+                </p>
+                <p class="italic text-center pb-6">to the wedding ceremony of our daughter</p>
                 </p>
 
-                <h1 class="text-2xl text-center font-dancing-script pb-3">Noor Alina Binti Ahmad Daniel</h1>
-                <p class="text-base text-center font-poppins">dengan pasangannya</p>
-                <h1 class="text-2xl text-center font-dancing-script pt-3">Syed Saeed Bin Syed Ameer</h1>
+                <h1 class="text-5xl text-center font-champagne pt-5 pb-5">Noor Alina
+                    <br>Binti Ahmad Daniel
+                </h1>
+                <p class="text-4xl text-center font-champagne">dengan pasangannya</p>
+                <h1 class="text-5xl text-center font-champagne pt-5 pb-5">Syed Saeed
+                    <br>Bin Syed Ameer
+                </h1>
                 <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
             </div>
 
-            <div class="bg-gray-100 grow w-96 text-center shadow-lg">
+            <div class="bg-gray-100 grow w-96 text-center shadow-lg w-screen lg:w-96">
                 <div class="">
-                    <span class="material-symbols-outlined scale-125">
+                    <span class="material-symbols-outlined scale-125 py-6">
                         calendar_today
                     </span>
-                    <p class="text-base font-poppins py-6">
-                        Pada Sabtu, 23 November 2023, bersamaan
+                    <p class="text-base font-poppins font-bold pb-6">
+                        TARIKH / DATE
+                    </p>
+                    <p class="text-base font-poppins">
+                        Pada Sabtu, 23 November 2023,
+                        <br>
+                        bersamaan
                         <br>
                         11 Jamadilawal 1445
                     </p>
                 </div>
                 <div class="">
-                    <span class="material-symbols-outlined scale-150">
+                    <span class="material-symbols-outlined scale-150 py-6">
                         pin_drop
                     </span>
-                    <p class="text-base font-poppins py-6">
-                        Lokasi
-                        <br>
-                        The St. Regis Kuala Lumpur
-                        <br>
-                        6, Jalan Stesen Sentral 2
-                        <br>
-                        Kuala Lumpur Sentral, 50470 Kuala Lumpur
+                    <p class="text-base font-poppins">
+                    <p class="text-base font-poppins font-bold"> TEMPAT / VENUE</p>
+                    <br>
+                    The St. Regis Kuala Lumpur
+                    <br>
+                    6, Jalan Stesen Sentral 2
+                    <br>
+                    Kuala Lumpur Sentral, 50470 Kuala Lumpur
                     </p>
                 </div>
 
                 <div class="">
-                    <span class="material-symbols-outlined scale-125 pb-6">
+                    <span class="material-symbols-outlined scale-125 py-6">
                         schedule
                     </span>
-                    <p class="text-base font-poppins">
-                        Aturcara majlis
+                    <p class="text-base font-poppins font-bold pb-6">
+                        ATURCARA MAJLIS / PROGRAMME
                     </p>
-                    <p class="text-base font-poppins font-bold">
+                    <p class="text-base font-poppins">
                         10:00 AM - 4:00 PM
                     </p>
-                    <p class="text-base font-poppins font-bold">
+                    <p class="text-base font-poppins">
                         Ketibaan Pengantin : 12:00 PM
                     </p>
                 </div>
@@ -106,10 +130,10 @@
                     <span class="material-symbols-outlined py-6">
                         warning
                     </span>
-                    <p class="text-base font-poppins font-bold">
+                    <p class="text-base font-poppins font-bold pb-6">
                         KOD PAKAIAN :
                     </p>
-                    <p class="text-base font-poppins font-bold">
+                    <p class="text-base font-poppins font-bold pb-6">
                         Formal / Batik / Baju Kebangsaan
                     </p>
                 </div>
@@ -139,59 +163,60 @@
                 </div>
 
             </div>
-            <div class="bg-gray-100 w-96 text-center shadow-lg">
-                <div class="p-6">
-                    <img src="{{ asset('img/bismillah.png') }}" class="img-center" alt="" width="100" height="100">
-                </div>
-                <p class="text-xs font-poppins tracking-wide">
-                    "Ya Allah Yang Maha Mencipta,
+            <div class="bg-gray-100 w-96 text-center shadow-lg w-screen lg:w-96">
+                <p class="text-4xl font-champagne text-centre pt-6">
+                    Doa Untuk Pengantin
+                </p>
+                <p class="text-xs font-playfair text-centre pb-6">
+                    YA ALLAH, KAU BERKATILAH MAJLIS PERKAHWINAN INI,
                     <br>
-                    Jadikanlah majlis ini
+                    LIMPAHKANLAH BARAQAH & RAHMAT KEPADA DUA
                     <br>
-                    majlis yang mendapat keberkatan dan keredhaanMu,
+                    MEMPELAI INI,
                     <br>
-                    kekalkanlah ikatan perkahwinan mereka sepanjang hayat,
+                    KURNIAKANLAH MEREKA ZURIAT YANG SOLEH DAN
                     <br>
-                    tetapkanlah kasih sayang antara mereka
+                    SOLEHAH. KEKALKAN JODOH MEREKA HINGGA KE AKHIR
                     <br>
-                    selagi tidak
-                    melebihi kasih padaMu.
+                    HAYAT, SIHAT WALAFIAT, DIMURAHKAN REZEKI DAN
                     <br>
-                    Ya Allah, satukan hati kedua mempelai ini seperti
+                    DILANJUTKAN USIA DENGAN MENDAPAT SYAFAAT
                     <br>
-                    Engkau satukan hati Adam dan Hawa, Yusuf dan Zulaikha
+                    DARIPADA JUNJUNGAN BESAR NABI MUHAMMAD SAW
                     <br>
-                    dan seperti Engkau satukan hati Muhammad s.a.w dan
                     <br>
-                    Siti Khadijah agar kekal hingga syurgaMu"
-                    <br>
-                    Aamin, Ya Rabbal A'lamin.
+                    ~AMIN YA RABBAL ALAMIN~
                 </p>
             </div>
 
-            <div class="bg-gray-100 w-96 text-center shadow-lg">
+            <div class="bg-gray-100 w-96 text-center shadow-lg w-screen lg:w-96">
                 <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
                 <h1 class="text-3xl text-center font-poppins pb-2 font-bold">RSVP</h1>
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSezqoesIoYIbtPnw-veXPf5ugujxS_U9CZvlqZyLtmBdZvOSg/viewform?embedded=true" width="385" height="820" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-                <hr class="w-48 h-1 mx-auto my-2 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
+                <a href="https://forms.gle/BjbMLoeET2KR4vXZ8" class="bg-gray-500 hover:bg-gray-400 text-white font-bold py-2 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded">
+                    Click Here!
+                </a>
+                <div class="pt-6">
+                    <hr class="w-48 h-1 mx-auto my-2 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
+                </div>
             </div>
-            <div class="bg-gray-100 w-96 h-96 text-center shadow-lg rounded-b-md ">
-                <h1 class="text-2xl text-center font-poppins pb-3 font-bold">Exclusively created by</h1>
+            <div class="bg-gray-100 w-screen lg:w-96 text-center shadow-lg rounded-b-md ">
+                <h1 class="text-4xl text-center font-edward pt-6 pb-3">Exclusively Created By</h1>
                 <img src="{{ asset('img/logo.jpg') }}" class="img-center p-3" alt="" width="200" height="200">
                 <div class="p-6 pb-64">
                     <a href="http://www.wasap.my/60127814142/">
-                        <i class="fa-brands fa-whatsapp fa-2xl"></i>
+                        <i class="p-2 fa-brands fa-whatsapp fa-2xl"></i>
                     </a>
                     <a href="https://www.instagram.com/ztmdesign/">
-                        <i class="fa-brands fa-instagram fa-2xl"></i>
+                        <i class="p-2 fa-brands fa-instagram fa-2xl"></i>
                     </a>
-                    <a href="https://shopee.com.my/zt306">
-                        <img src="{{ asset('img/shopeeblacktransparent.png') }}" class="img-center" alt="shopee" width="32" height="32">
-                    </a>
-                    <hr class="w-48 h-1 mx-auto my-2 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
-                    <hr class="w-48 h-1 mx-auto my-2 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
-
-
+                    <div class="p-3">
+                        <a href="https://shopee.com.my/zt306">
+                            <img src="{{ asset('img/shopeeblacktransparent.png') }}" class="img-center" alt="shopee" width="32" height="32">
+                        </a>
+                    </div>
+                    <div class="pt-6">
+                        <hr class="w-48 h-1 mx-auto my-2 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
+                    </div>
                 </div>
             </div>
             <div class="w-full h-screen">
