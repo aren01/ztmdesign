@@ -28,17 +28,17 @@
     font-feature-settings: "liga";
 }
 
-.font-champagne {
+@font-face {
     font-family: CAC Champagne;
     src: url("/fonts/cac_champagne.tff");
 }
 
-.font-playfair {
+@font-face {
     font-family: Playfair Display;
     src: url("/fonts/PlayfairDisplay-Regular.tff");
 }
 
-.font-edward {
+@font-face {
     font-family: Edwardian Script ITC;
     src: url("/fonts/EdwardianScript.tff");
 }

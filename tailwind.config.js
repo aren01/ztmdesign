@@ -21,7 +21,7 @@ module.exports = {
             fontFamily: {
                 "dancing-script": ['"Dancing Script"', "cursive"],
                 poppins: ["Poppins", "sans-serif"],
-                champagne: ["cac-champagne-regular", "sans-serif"],
+                champagne: ["CAC Champagne", "sans-serif"],
                 playfair: ["Playfair Display", "serif"],
                 edward: ["Edwardian Script ITC"],
             },
