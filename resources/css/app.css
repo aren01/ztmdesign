@@ -31,17 +31,17 @@
 @layer base {
     @font-face {
         font-family: "champagne";
-        src: url("../public/fonts/CACChampagne.ttf");
+        src: url("../fonts/CACChampagne.ttf");
     }
 
     @font-face {
         font-family: "playfair";
-        src: url("../public/fonts/PlayfairDisplay.ttf");
+        src: url("../fonts/PlayfairDisplay.ttf");
     }
 
     @font-face {
         font-family: "edwardian";
-        src: url("../public/fonts/EdwardianScript.ttf");
+        src: url("../fonts/EdwardianScript.ttf");
     }
 }
 
