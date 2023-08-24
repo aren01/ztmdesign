@@ -20,9 +20,9 @@ module.exports = {
         extend: {
             fontFamily: {
                 poppins: ["Poppins", "sans-serif"],
-                champagne: ["champagne", "cursive"],
+                champagne: ["champagne", "sans-serif"],
                 playfair: ["playfair", "serif"],
-                edward: ["edwardian", "cursive"],
+                edward: ["edwardian", "sans-serif"],
                 inter: ["var(--font-inter)", "sans-serif"],
             },
             colors: {
