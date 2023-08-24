@@ -20,7 +20,10 @@ module.exports = {
         extend: {
             fontFamily: {
                 "dancing-script": ['"Dancing Script"', "cursive"],
-                poppins: ['"Poppins"', "sans-serif"],
+                poppins: ["Poppins", "sans-serif"],
+                champagne: ["cac-champagne-regular", "sans-serif"],
+                playfair: ["Playfair Display", "serif"],
+                edward: ["Edwardian Script ITC"],
             },
             colors: {
                 gray: {
