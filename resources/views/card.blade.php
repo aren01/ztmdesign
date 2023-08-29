@@ -39,7 +39,7 @@
             <!--white background-->
 <!--paste body back here-->
                 <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
-                <div class="">
+                <div class="bg-gray-100 w-96 text-center shadow-lg w-screen lg:w-96">
                     <h1 class="text-3xl text-center font-dancing-script pb-3">Menghitung hari</h1>
                     <div class="scale-75" x-data="beer()" x-init="start()">
                         <div class="text-6xl text-center flex items-center justify-center">
