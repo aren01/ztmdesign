@@ -62,8 +62,6 @@
                         </div>
                     </div>
                 </div>
-
-            </div>
             <div class="bg-gray-100 w-96 text-center shadow-lg w-screen lg:w-96">
                 <p class="text-4xl font-champagne text-centre pt-6">
                     Doa Untuk Pengantin
