@@ -35,9 +35,9 @@
                 <img src="{{ asset('img/Amin-Fatin-02.png') }}" class="w-screen lg:w-96 h-full rounded-t-md" alt="">
             </div>
             <!--shadow at background-->
-<!--
             <!--2nd box-->
             <!--white background-->
+<!--
             <div class=" bg-gray-100 shadow-lg w-screen lg:w-96">
                 <img src="{{ asset('img/Bismillh.png') }}" class="py-2 mx-auto scale-75 w-[600px] h-[105px]" alt="">
                 <!--assalamualaikum image-->
@@ -138,7 +138,7 @@
                     <p class="text-base font-poppins font-bold pb-6">
                         Formal / Batik / Baju Kebangsaan
                     </p>
-                </div>
+                </div> 
 -->
                 <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
                 <div class="">
