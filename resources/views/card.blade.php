@@ -35,8 +35,7 @@
                 <img src="{{ asset('img/Amin-Fatin-02.png') }}" class="w-screen lg:w-96 h-full rounded-t-md" alt="">
             </div>
             <!--shadow at background-->
-
-/*
+<!--
             <!--2nd box-->
             <!--white background-->
             <div class=" bg-gray-100 shadow-lg w-screen lg:w-96">
@@ -140,7 +139,7 @@
                         Formal / Batik / Baju Kebangsaan
                     </p>
                 </div>
-*/
+-->
                 <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
                 <div class="">
                     <h1 class="text-3xl text-center font-dancing-script pb-3">Menghitung hari</h1>
