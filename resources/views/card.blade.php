@@ -17,23 +17,26 @@
 
 <body class="bg-gray-300">
 
-
-
     <div class="">
         <!--put everything in a flex container and center it-->
         <div class="flex flex-col mx-auto h-screen items-center w-screen lg:w-96">
             <div class="shadow-lg">
                 <!--image for the starting/top-->
-                <img src="{{ asset('img/card2.jpg') }}" class="w-screen lg:w-96 h-full rounded-t-md" alt="">
+                <img src="{{ asset('img/Amin-Fatin-01.png') }}" class="w-screen lg:w-96 h-full rounded-t-md" alt="">
             </div>
             <div class="mx-auto">
                 <audio controls>
-                    <source src="{{ asset('mp3/edsheeran-perfect.mp3') }}" type="audio/mpeg">
+                    <source src="{{ asset('mp3/bg-music-fatin-aiman.mp3') }}" type="audio/mpeg">
                     Your browser does not support the audio element.
                 </audio>
             </div>
+		<div class="shadow-lg">
+                <!--image for the second-->
+                <img src="{{ asset('img/Amin-Fatin-02.png') }}" class="w-screen lg:w-96 h-full rounded-t-md" alt="">
+            </div>
             <!--shadow at background-->
 
+/*
             <!--2nd box-->
             <!--white background-->
             <div class=" bg-gray-100 shadow-lg w-screen lg:w-96">
@@ -137,6 +140,7 @@
                         Formal / Batik / Baju Kebangsaan
                     </p>
                 </div>
+*/
                 <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
                 <div class="">
                     <h1 class="text-3xl text-center font-dancing-script pb-3">Menghitung hari</h1>
@@ -240,7 +244,7 @@
                                 <span class="close topright">&times;</span>
                                 <img src="{{ asset('img/calendar.png') }}" class="img-center p-3" alt="">
                                 <p class="pb-4 font-poppins">Set event reminder : </p>
-                                <a target=" _blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=MG5lZ2I4ZW9sb3BvZHU5NDVqZnVubG1nNHEgaGFmaXptdXRhbGliMDFAbQ&amp;tmsrc=hafizmutalib01%40gmail.com"><img class="img-center pb-4" src="https://www.google.com/calendar/images/ext/gc_button1_en.gif"></a>
+                                <a target=" _blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=M29hbDVvY3JjNWxnbjV1azQxNjNkdjRqN2YgaGFmaXptdXRhbGliMDFAbQ&tmsrc=hafizmutalib01%40gmail.com"><img class="img-center pb-4" src="https://www.google.com/calendar/images/ext/gc_button1_en.gif"></a>
 
                             </div>
                         </div>
@@ -261,7 +265,7 @@
                                 <img width="64" height="64" src="{{ asset('img/maps.png') }}" class="img-center p-3" alt="">
                                 <p class="pb-4 font-poppins">Google Maps : </p>
                                 <div class="pb-4">
-                                    <a href="https://goo.gl/maps/FSLw249n2hCMMDZm9">
+                                    <a href="https://goo.gl/maps/26fZ87AP35JpSWHt6">
                                         <button class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">
                                             Click here
                                         </button>
@@ -270,7 +274,7 @@
                                 <img width="70" height="70" src="{{ asset('img/waze.png') }}" class="img-center p-3 rounded-full" alt="">
                                 <p class="pb-4">Waze : </p>
                                 <div class="pb-4">
-                                    <a href="https://ul.waze.com/ul?place=ChIJJY7Mqih62jER2Y3nqwN7_pc&ll=1.65713860%2C103.64212830&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location">
+                                    <a href="https://www.waze.com/live-map/directions/badiah-hotel-jalan-laksamana-abdul-razak-bandar-seri-begawan?to=place.w.75300913.753205737.2616341&from=place.w.75300913.753205737.2616341&utm_medium=lm_share_directions&utm_campaign=default&utm_source=waze_website">
                                         <button class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">
                                             Click here
                                         </button>
@@ -295,8 +299,8 @@
 
                                 <div class="flex space-x-4 box">
                                     <div class="py-6">
-                                        <p class="pb-2 font-poppins">Ali (Ayah)</p>
-                                        <a href="https://www.google.com/">
+                                        <p class="pb-2 font-poppins">NORIZAN</p>
+                                        <a href="wa.me/6738877240">
                                             <button class="flex space-x-2 items-center px-4 py-2 bg-green-500 hover:bg-green-700 rounded-md drop-shadow-md">
                                                 <!-- use SVG, PNG, or an Icon here -->
                                                 <img src="{{ asset('img/whatsapp.png') }}" class="" alt="" width="30" height="30">
@@ -309,8 +313,8 @@
                                 </div>
                                 <div class="flex space-x-4 box">
                                     <div class="py-6">
-                                        <p class="pb-2 font-poppins">Ali (Ayah)</p>
-                                        <a href="https://www.google.com/">
+                                        <p class="pb-2 font-poppins">FAUZAN</p>
+       					<a href="wa.me/6737304335">
                                             <button class="flex space-x-2 items-center px-4 py-2 bg-green-500 hover:bg-green-700 rounded-md drop-shadow-md">
                                                 <!-- use SVG, PNG, or an Icon here -->
                                                 <img src="{{ asset('img/whatsapp.png') }}" class="" alt="" width="30" height="30">
@@ -323,8 +327,8 @@
                                 </div>
                                 <div class="flex space-x-4 box">
                                     <div class="py-6">
-                                        <p class="pb-2 font-poppins">Ali (Ayah)</p>
-                                        <a href="https://www.google.com/">
+                                        <p class="pb-2 font-poppins">NABIL NASHRULLAH</p>
+                                        <a href="wa.me/6738612813">
                                             <button class="flex space-x-2 items-center px-4 py-2 bg-green-500 hover:bg-green-700 rounded-md drop-shadow-md">
                                                 <!-- use SVG, PNG, or an Icon here -->
                                                 <img src="{{ asset('img/whatsapp.png') }}" class="" alt="" width="30" height="30">
@@ -354,7 +358,6 @@
                                 <h1 class="font-bold p-4 font-poppins">TENTATIVE</h1>
                                 <p class="font-poppins">Event starts&emsp;:&emsp;12:00 P.M</p>
                                 <p class="font-poppins">Arrival of bride&emsp;:&emsp;1:00 P.M</p>
-                                <p class="pb-4 font-poppins">Event ends&emsp;:&emsp;4:00 P.M</p>
                             </div>
                         </div>
 
@@ -386,7 +389,7 @@
                 days: '00',
                 distance: 0,
                 countdown: null,
-                beerTime: new Date('February 29, 2023 00:00:00').getTime(),
+                beerTime: new Date('December 24, 2023 12:00:00').getTime(),
                 now: new Date().getTime(),
                 start: function() {
                     this.countdown = setInterval(() => {
