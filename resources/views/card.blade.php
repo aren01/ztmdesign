@@ -43,7 +43,7 @@
                 <div class="scale-75" x-data="beer()" x-init="start()">
                     <div class="text-4xl text-center flex items-center justify-center p-6">
                         <div class="w-24 mx-1 bg-[#F3EFE5] rounded-lg">
-                            <div class="font-mono leading-none" x-text="days">00</div>
+                            <div class="font-mono leading-none" x-text="days">000</div>
                             <div class="font-mono uppercase text-sm leading-none">Days</div>
                         </div>
                         <div class="w-24 mx-1 bg-[#F3EFE5] rounded-lg">
@@ -139,7 +139,7 @@
                                 <span class="close topright">&times;</span>
                                 <img src="{{ asset('img/calendar.png') }}" class="img-center p-3" alt="">
                                 <p class="pb-4 font-poppins">Set event reminder : </p>
-                                <a target=" _blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=M29hbDVvY3JjNWxnbjV1azQxNjNkdjRqN2YgaGFmaXptdXRhbGliMDFAbQ&tmsrc=hafizmutalib01%40gmail.com"><img class="img-center pb-4" src="https://www.google.com/calendar/images/ext/gc_button1_en.gif"></a>
+                                <a target=" _blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NjFpdmlqZjY2Y3Zrc3B0dTh0NTlpMWVrZ3AgMzIxMTMxYTFhMjA1YTk2YWU3MjY2YTE3YWM5ZTRlM2RiOGFhOTFjZjAzZDcwMjg1OGI4OTA0ZDY3ODZlMDA2Y0Bn&tmsrc=321131a1a205a96ae7266a17ac9e4e3db8aa91cf03d702858b8904d6786e006c%40group.calendar.google.com"><img class="img-center pb-4" src="https://www.google.com/calendar/images/ext/gc_button1_en.gif"></a>
 
                             </div>
                         </div>
@@ -268,26 +268,17 @@
 
     </div>
 
-
-
-
-
-
-    <script>
-        var audio = document.getElementById("myaudio");
-        audio.volume = 0.3;
-    </script>
-
     <script>
         function beer() {
+
             return {
                 seconds: '00',
                 minutes: '00',
                 hours: '00',
-                days: '00',
+                days: '000',
                 distance: 0,
                 countdown: null,
-                beerTime: new Date('December 24, 2023 12:00:00').getTime(),
+                beerTime: new Date(Date.UTC(2023, 11, 24, 11, 0, 0)),
                 now: new Date().getTime(),
                 start: function() {
                     this.countdown = setInterval(() => {
@@ -295,13 +286,14 @@
                         this.now = new Date().getTime();
                         this.distance = this.beerTime - this.now;
                         // Set Times
-                        this.days = this.padNum(Math.floor(this.distance / (1000 * 60 * 60 * 24)));
+                        this.days = this.padNum(Math.floor(this.distance / (1000 * 60 * 60 * 24)), 3);
                         this.hours = this.padNum(Math.floor((this.distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
                         this.minutes = this.padNum(Math.floor((this.distance % (1000 * 60 * 60)) / (1000 * 60)));
                         this.seconds = this.padNum(Math.floor((this.distance % (1000 * 60)) / 1000));
                         // Stop
                         if (this.distance < 0) {
                             clearInterval(this.countdown);
+                            console.log("Countdown stopped. Target time reached.");
                             this.days = '00';
                             this.hours = '00';
                             this.minutes = '00';
@@ -309,14 +301,15 @@
                         }
                     }, 100);
                 },
-                padNum: function(num) {
+                padNum: function(num, digits = 2) {
                     var zero = '';
-                    for (var i = 0; i < 2; i++) {
+                    for (var i = 0; i < digits; i++) {
                         zero += '0';
                     }
-                    return (zero + num).slice(-2);
+                    return (zero + num).slice(-digits);
                 }
             }
+
         }
     </script>
 
@@ -379,96 +372,7 @@
             }
         }
     </script>
-    <script>
-        // player
-        var music = document.querySelector('.music-element')
-        var playBtn = document.querySelector('.play')
-        var seekbar = document.querySelector('.seekbar')
-        var currentTime = document.querySelector('.current-time')
-        var duration = document.querySelector('.duration')
 
-        function handlePlay() {
-            if (music.paused) {
-                music.play();
-                playBtn.className = 'pause'
-                playBtn.innerHTML = '<i class="material-icons">pause</i>'
-            } else {
-                music.pause();
-                playBtn.className = 'play'
-                playBtn.innerHTML = '<i class="material-icons">play_arrow</i>'
-            }
-            music.addEventListener('ended', function() {
-                playBtn.className = 'play'
-                playBtn.innerHTML = '<i class="material-icons">play_arrow</i>'
-                music.currentTime = 0
-            });
-        }
-
-        music.onloadeddata = function() {
-            seekbar.max = music.duration
-            var ds = parseInt(music.duration % 60)
-            var dm = parseInt((music.duration / 60) % 60)
-            duration.innerHTML = dm + ':' + ds
-        }
-        music.ontimeupdate = function() {
-            seekbar.value = music.currentTime
-        }
-        handleSeekBar = function() {
-            music.currentTime = seekbar.value
-        }
-        music.addEventListener('timeupdate', function() {
-            var cs = parseInt(music.currentTime % 60)
-            var cm = parseInt((music.currentTime / 60) % 60)
-            currentTime.innerHTML = cm + ':' + cs
-        }, false)
-
-
-        // like
-        var favIcon = document.querySelector('.favorite')
-
-        function handleFavorite() {
-            favIcon.classList.toggle('active');
-        }
-
-
-        // repeat
-        var repIcon = document.querySelector('.repeat')
-
-        function handleRepeat() {
-            if (music.loop == true) {
-                music.loop = false
-                repIcon.classList.toggle('active')
-            } else {
-                music.loop = true
-                repIcon.classList.toggle('active')
-            }
-        }
-
-        // volume
-        var volIcon = document.querySelector('.volume')
-        var volBox = document.querySelector('.volume-box')
-        var volumeRange = document.querySelector('.volume-range')
-        var volumeDown = document.querySelector('.volume-down')
-        var volumeUp = document.querySelector('.volume-up')
-
-        function handleVolume() {
-            volIcon.classList.toggle('active')
-            volBox.classList.toggle('active')
-        }
-
-        volumeDown.addEventListener('click', handleVolumeDown);
-        volumeUp.addEventListener('click', handleVolumeUp);
-
-        function handleVolumeDown() {
-            volumeRange.value = Number(volumeRange.value) - 20
-            music.volume = volumeRange.value / 100
-        }
-
-        function handleVolumeUp() {
-            volumeRange.value = Number(volumeRange.value) + 20
-            music.volume = volumeRange.value / 100
-        }
-    </script>
 </body>
 
 
