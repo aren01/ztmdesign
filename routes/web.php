@@ -13,10 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/card', function () {
+Route::get('/card-test', function () {
     return view('card');
 });
 
 Route::get('/', function () {
     return view('home');
+});
+
+Route::get('/fatin-amin', function () {
+    return view('card');
 });

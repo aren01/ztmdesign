@@ -15,7 +15,7 @@
 <!--start of the body-->
 <!--background colour-->
 
-<body class="bg-gray-300">
+<body class="bg-[#F3EFE5]">
 
     <div class="">
         <!--put everything in a flex container and center it-->
@@ -30,39 +30,39 @@
                     Your browser does not support the audio element.
                 </audio>
             </div>
-		<div class="shadow-lg">
+            <div class="shadow-lg">
                 <!--image for the second-->
                 <img src="{{ asset('img/Amin-Fatin-02.png') }}" class="w-screen lg:w-96 h-full rounded-t-md" alt="">
             </div>
             <!--shadow at background-->
             <!--2nd box-->
             <!--white background-->
-<!--paste body back here-->
-                <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
-                <div class="bg-gray-100 w-96 text-center shadow-lg w-screen lg:w-96">
-                    <h1 class="text-3xl text-center font-dancing-script pb-3">Menghitung hari</h1>
-                    <div class="scale-75" x-data="beer()" x-init="start()">
-                        <div class="text-6xl text-center flex items-center justify-center">
-                            <div class="w-24 mx-1 bg-white rounded-lg">
-                                <div class="font-mono leading-none" x-text="days">00</div>
-                                <div class="font-mono uppercase text-sm leading-none">Days</div>
-                            </div>
-                            <div class="w-24 mx-1 bg-white rounded-lg">
-                                <div class="font-mono leading-none" x-text="hours">00</div>
-                                <div class="font-mono uppercase text-sm leading-none">Hours</div>
-                            </div>
-                            <div class="w-24 mx-1 bg-white rounded-lg">
-                                <div class="font-mono leading-none" x-text="minutes">00</div>
-                                <div class="font-mono uppercase text-sm leading-none">Minutes</div>
-                            </div>
-                            <div class="w-24 mx-1 bg-white rounded-lg">
-                                <div class="font-mono leading-none" x-text="seconds">00</div>
-                                <div class="font-mono uppercase text-sm leading-none">Seconds</div>
-                            </div>
+            <!--paste body back here-->
+            <div class="bg-[#E3DAD5] w-96 text-center shadow-lg w-screen lg:w-96 ">
+                <h1 class="text-3xl text-center font-dancing-script pt-3 pb-3">Menghitung hari</h1>
+                <div class="scale-75" x-data="beer()" x-init="start()">
+                    <div class="text-6xl text-center flex items-center justify-center p-6">
+                        <div class="w-24 mx-1 bg-[#F3EFE5] rounded-lg">
+                            <div class="font-mono leading-none" x-text="days">00</div>
+                            <div class="font-mono uppercase text-sm leading-none">Days</div>
+                        </div>
+                        <div class="w-24 mx-1 bg-[#F3EFE5] rounded-lg">
+                            <div class="font-mono leading-none" x-text="hours">00</div>
+                            <div class="font-mono uppercase text-sm leading-none">Hours</div>
+                        </div>
+                        <div class="w-24 mx-1 bg-[#F3EFE5] rounded-lg">
+                            <div class="font-mono leading-none" x-text="minutes">00</div>
+                            <div class="font-mono uppercase text-sm leading-none">Minutes</div>
+                        </div>
+                        <div class="w-24 mx-1 bg-[#F3EFE5] rounded-lg">
+                            <div class="font-mono leading-none" x-text="seconds">00</div>
+                            <div class="font-mono uppercase text-sm leading-none">Seconds</div>
                         </div>
                     </div>
                 </div>
-            <div class="bg-gray-100 w-96 text-center shadow-lg w-screen lg:w-96">
+            </div>
+
+            <div class="bg-[#E3DAD5] w-96 text-center shadow-lg w-screen lg:w-96">
                 <p class="text-4xl font-champagne text-centre pt-6">
                     Doa Untuk Pengantin
                 </p>
@@ -88,27 +88,27 @@
                 </p>
             </div>
 
-            <div class="bg-gray-100 w-96 text-center shadow-lg w-screen lg:w-96">
+            <div class="bg-[#E3DAD5] w-96 text-center shadow-lg w-screen lg:w-96">
                 <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
                 <h1 class="text-3xl text-center font-poppins pb-2 font-bold">RSVP</h1>
-                <a href="https://forms.gle/BjbMLoeET2KR4vXZ8" class="bg-gray-500 hover:bg-gray-400 text-white font-bold py-2 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded">
+                <a href="https://forms.gle/Zrj7cW36a6Szqnys5" class="bg-gray-500 hover:bg-gray-400 text-white font-bold py-2 px-4 border-b-4 border-gray-700 hover:border-gray-500 rounded">
                     Click Here!
                 </a>
                 <div class="pt-6">
                     <hr class="w-48 h-1 mx-auto my-2 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
                 </div>
             </div>
-            <div class="bg-gray-100 w-screen lg:w-96 text-center shadow-lg rounded-b-md ">
+            <div class="bg-[#E3DAD5] w-screen lg:w-96 text-center shadow-lg rounded-b-md ">
                 <h1 class="text-4xl text-center font-edward pt-6 pb-3">Exclusively Created By</h1>
                 <img src="{{ asset('img/logo.jpg') }}" class="img-center p-3" alt="" width="200" height="200">
                 <div class="p-6 pb-64">
                     <a href="http://www.wasap.my/60127814142/">
-                        <i class="p-2 fa-brands fa-whatsapp fa-2xl"></i>
+                        <i class="px-1 fa-brands fa-whatsapp fa-2xl"></i>
                     </a>
                     <a href="https://www.instagram.com/ztmdesign/">
-                        <i class="p-2 fa-brands fa-instagram fa-2xl"></i>
+                        <i class="px-1 fa-brands fa-instagram fa-2xl"></i>
                     </a>
-                    <div class="p-3">
+                    <div class="py-1">
                         <a href="https://shopee.com.my/zt306">
                             <img src="{{ asset('img/shopeeblacktransparent.png') }}" class="img-center" alt="shopee" width="32" height="32">
                         </a>
@@ -194,7 +194,7 @@
 
                                 <div class="flex space-x-4 box">
                                     <div class="py-6">
-                                        <p class="pb-2 font-poppins">NORIZAN</p>
+                                        <p class="pb-2 font-poppins">NORIZAN (Ibu)</p>
                                         <a href="wa.me/6738877240">
                                             <button class="flex space-x-2 items-center px-4 py-2 bg-green-500 hover:bg-green-700 rounded-md drop-shadow-md">
                                                 <!-- use SVG, PNG, or an Icon here -->
@@ -208,8 +208,8 @@
                                 </div>
                                 <div class="flex space-x-4 box">
                                     <div class="py-6">
-                                        <p class="pb-2 font-poppins">FAUZAN</p>
-       					<a href="wa.me/6737304335">
+                                        <p class="pb-2 font-poppins">FAUZAN (Bapa)</p>
+                                        <a href="wa.me/6737304335">
                                             <button class="flex space-x-2 items-center px-4 py-2 bg-green-500 hover:bg-green-700 rounded-md drop-shadow-md">
                                                 <!-- use SVG, PNG, or an Icon here -->
                                                 <img src="{{ asset('img/whatsapp.png') }}" class="" alt="" width="30" height="30">
@@ -222,7 +222,7 @@
                                 </div>
                                 <div class="flex space-x-4 box">
                                     <div class="py-6">
-                                        <p class="pb-2 font-poppins">NABIL NASHRULLAH</p>
+                                        <p class="pb-2 font-poppins">NABIL (Adik)</p>
                                         <a href="wa.me/6738612813">
                                             <button class="flex space-x-2 items-center px-4 py-2 bg-green-500 hover:bg-green-700 rounded-md drop-shadow-md">
                                                 <!-- use SVG, PNG, or an Icon here -->
@@ -251,8 +251,8 @@
                             <div class="modal-content rounded-md p-6">
                                 <span class="close topright">&times;</span>
                                 <h1 class="font-bold p-4 font-poppins">TENTATIVE</h1>
-                                <p class="font-poppins">Event starts&emsp;:&emsp;12:00 P.M</p>
-                                <p class="font-poppins">Arrival of bride&emsp;:&emsp;1:00 P.M</p>
+                                <p class="font-poppins">Menerima Jemputan&emsp;:&emsp;12:00 P.M - 12:45 P.M</p>
+                                <p class="font-poppins pb-4">Majlis Bersanding&emsp;:&emsp;13:00 P.M</p>
                             </div>
                         </div>
 
