@@ -41,7 +41,7 @@
             <div class="bg-[#E3DAD5] w-96 text-center shadow-lg w-screen lg:w-96 ">
                 <h1 class="text-3xl text-center font-dancing-script pt-3 pb-3">Menghitung hari</h1>
                 <div class="scale-75" x-data="beer()" x-init="start()">
-                    <div class="text-6xl text-center flex items-center justify-center p-6">
+                    <div class="text-4xl text-center flex items-center justify-center p-6">
                         <div class="w-24 mx-1 bg-[#F3EFE5] rounded-lg">
                             <div class="font-mono leading-none" x-text="days">00</div>
                             <div class="font-mono uppercase text-sm leading-none">Days</div>
