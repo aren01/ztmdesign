@@ -250,8 +250,12 @@
                             <div class="modal-content rounded-md p-6">
                                 <span class="close topright">&times;</span>
                                 <h1 class="font-bold p-4 font-poppins">TENTATIVE</h1>
-                                <p class="font-poppins">Menerima Jemputan&emsp;:&emsp;12:00 P.M - 12:45 P.M</p>
-                                <p class="font-poppins pb-4">Majlis Bersanding&emsp;:&emsp;13:00 P.M</p>
+                                <p class="font-poppins">Menerima Jemputan&emsp;:
+                                    <br>12:00 P.M - 12:45 P.M
+                                </p><br>
+                                <p class="font-poppins pb-4">Majlis Bersanding&emsp;:
+                                    <br>13:00 P.M
+                                </p>
                             </div>
                         </div>
 
