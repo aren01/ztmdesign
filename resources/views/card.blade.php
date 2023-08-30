@@ -195,7 +195,7 @@
                                 <div class="flex space-x-4 box">
                                     <div class="py-6">
                                         <p class="pb-2 font-poppins">NORIZAN (Ibu)</p>
-                                        <a href="wa.me/6738877240">
+                                        <a href="https://wa.me/6738877240">
                                             <button class="flex space-x-2 items-center px-4 py-2 bg-green-500 hover:bg-green-700 rounded-md drop-shadow-md">
                                                 <!-- use SVG, PNG, or an Icon here -->
                                                 <img src="{{ asset('img/whatsapp.png') }}" class="" alt="" width="30" height="30">
@@ -209,7 +209,7 @@
                                 <div class="flex space-x-4 box">
                                     <div class="py-6">
                                         <p class="pb-2 font-poppins">FAUZAN (Bapa)</p>
-                                        <a href="wa.me/6737304335">
+                                        <a href="https://wa.me/6737304335">
                                             <button class="flex space-x-2 items-center px-4 py-2 bg-green-500 hover:bg-green-700 rounded-md drop-shadow-md">
                                                 <!-- use SVG, PNG, or an Icon here -->
                                                 <img src="{{ asset('img/whatsapp.png') }}" class="" alt="" width="30" height="30">
@@ -223,7 +223,7 @@
                                 <div class="flex space-x-4 box">
                                     <div class="py-6">
                                         <p class="pb-2 font-poppins">NABIL (Adik)</p>
-                                        <a href="wa.me/6738612813">
+                                        <a href="https://wa.me/6738612813">
                                             <button class="flex space-x-2 items-center px-4 py-2 bg-green-500 hover:bg-green-700 rounded-md drop-shadow-md">
                                                 <!-- use SVG, PNG, or an Icon here -->
                                                 <img src="{{ asset('img/whatsapp.png') }}" class="" alt="" width="30" height="30">
