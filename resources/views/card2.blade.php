@@ -139,7 +139,7 @@
                                 <span class="close topright">&times;</span>
                                 <img src="{{ asset('img/calendar.png') }}" class="img-center p-3" alt="">
                                 <p class="pb-4 font-poppins">Set event reminder : </p>
-                                <a target=" _blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NjFpdmlqZjY2Y3Zrc3B0dTh0NTlpMWVrZ3AgMzIxMTMxYTFhMjA1YTk2YWU3MjY2YTE3YWM5ZTRlM2RiOGFhOTFjZjAzZDcwMjg1OGI4OTA0ZDY3ODZlMDA2Y0Bn&tmsrc=321131a1a205a96ae7266a17ac9e4e3db8aa91cf03d702858b8904d6786e006c%40group.calendar.google.com"><img class="img-center pb-4" src="https://www.google.com/calendar/images/ext/gc_button1_en.gif"></a>
+                                <a target=" _blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NXNsYXE1bWMzZTNpbm5jdjMybW5kMG9qNG4gMzIxMTMxYTFhMjA1YTk2YWU3MjY2YTE3YWM5ZTRlM2RiOGFhOTFjZjAzZDcwMjg1OGI4OTA0ZDY3ODZlMDA2Y0Bn&tmsrc=321131a1a205a96ae7266a17ac9e4e3db8aa91cf03d702858b8904d6786e006c%40group.calendar.google.com"><img class="img-center pb-4" src="https://www.google.com/calendar/images/ext/gc_button1_en.gif"></a>
 
                             </div>
                         </div>
