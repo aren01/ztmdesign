@@ -13,8 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/card-test', function () {
-    return view('card');
+Route::get('/sample_design_A', function () {
+    return view('');
 });
 
 Route::get('/', function () {
@@ -23,4 +23,8 @@ Route::get('/', function () {
 
 Route::get('/fatin-amin', function () {
     return view('card');
+});
+
+Route::get('/amin-fatin', function () {
+    return view('card2');
 });
