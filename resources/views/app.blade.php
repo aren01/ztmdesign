@@ -17,6 +17,10 @@
     <script src="https://kit.fontawesome.com/638b68b310.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.x.x/dist/alpine.min.js"></script>
 
+    @php
+    header('Cache-Control: max-age=0');
+    @endphp
+
 
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
