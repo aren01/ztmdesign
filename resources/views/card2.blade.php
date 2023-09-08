@@ -22,7 +22,7 @@
         <div class="flex flex-col mx-auto h-screen items-center w-screen lg:w-96">
             <div class="shadow-lg">
                 <!--image for the starting/top-->
-                <img src="{{ asset('img/Amin-Fatin-01.png') }}" class="w-screen lg:w-96 h-full rounded-t-md" alt="">
+                <img src="{{ asset('img/Amin_Fatin_Front.png') }}" class="w-screen lg:w-96 h-full rounded-t-md" alt="">
             </div>
             <div class="mx-auto">
                 <audio controls>
