@@ -22,7 +22,7 @@
         <div class="flex flex-col mx-auto h-screen items-center w-screen lg:w-96">
             <div class="shadow-lg">
                 <!--image for the starting/top-->
-                <img src="{{ asset('img/Fatin_Amin_Front.png') }}" class="w-screen lg:w-96 h-full rounded-t-md" alt="">
+                <img src="{{ asset('img/Fatin-Amin-Front.png') }}" class="w-screen lg:w-96 h-full rounded-t-md" alt="">
             </div>
             <div class="mx-auto">
                 <audio controls>
@@ -324,7 +324,7 @@
         // Get the <span> element that closes the modal
         var span = document.getElementsByClassName("close");
 
-        // When the user clicks the button, open the modal 
+        // When the user clicks the button, open the modal
         btn[0].onclick = function() {
             modal[0].style.display = "block";
         }
