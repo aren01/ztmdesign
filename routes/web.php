@@ -28,3 +28,7 @@ Route::get('/fatin-amin', function () {
 Route::get('/amin-fatin', function () {
     return view('card2');
 });
+
+Route::get('/sample_design_A', function () {
+    return view('sample');
+});
